@@ -1,0 +1,46 @@
+\documentclass{article}
+\usepackage[a4paper, left=2cm, right=2cm, top=2cm, bottom=2cm]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage{multicol}
+\usepackage{fancyhdr}
+\usepackage{fontawesome5}
+\usepackage{hyperref}
+\usepackage{graphicx}
+
+\newcommand\textbox[1]{%
+  \parbox{.333\textwidth}{#1}%
+}
+
+\begin{document}
+\pagenumbering{gobble}
+
+\setlength{\parindent}{2em}
+\setlength{\parskip}{1pt}
+\enlargethispage{40pt}
+
+\begin{center}
+\Huge \textbf{Bernat Ibáñez Martínez}
+\vspace{10pt}
+
+\large
+\textbox{\href{mailto:work@bibanez.xyz}{personal@bibanez.xyz}\hfill}\textbox{\hfil +34 622 126 044\hfil}\textbox{\hfill Barcelona, Spain}
+
+\hspace*{\fill} {\faGithub \hspace{2pt} \href{https://github.com/bibanez}{github.com/bibanez}} \hfill {\faGlobeEurope\hspace{2pt} \href{https://bibanez.xyz}{bibanez.xyz}} \hfill {\faLinkedin\hspace{2pt} \href{https://www.linkedin.com/in/bibanez03/}{bibanez03}}
+\hspace*{\fill}
+
+\hrulefill
+\end{center}
+
+\setlength{\parindent}{2em}
+
+\normalsize
+\vspace{-10pt}
+\input{src/education}
+\vspace{-10pt}
+\input{src/awards}
+\vspace{-10pt}
+\input{src/experience}
+\vspace{-10pt}
+\input{src/skills}
+
+\end{document}
